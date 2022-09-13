@@ -1,4 +1,4 @@
-ARG IMG=node:12-buster-slim
+ARG IMG=node:16-buster-slim
 FROM ${IMG}
 COPY package.json /npm/
 WORKDIR /npm
