@@ -2,7 +2,7 @@ name: base
 
 on:
   push:
-    branches: [ jzq ]
+    branches: [ '*' ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
 
@@ -49,6 +49,6 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:fe-jzq
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name	}}
           labels: ${{ steps.meta.outputs.labels }}
 
