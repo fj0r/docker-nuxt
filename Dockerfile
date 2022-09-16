@@ -10,4 +10,5 @@ RUN set -eux \
     apt-get install -y --no-install-recommends \
         procps curl jq tree inetutils-ping \
   ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
-  ; npm install
+  ; npm install \
+  ; npm install sharp@0.29.0
