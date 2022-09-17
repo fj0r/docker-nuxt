@@ -1,91 +1,30 @@
 {
-  "name": "ruoyi-vue-plus",
-  "version": "4.2.0",
-  "description": "蒙阴县公共信用信息平台",
-  "author": "LionLi",
-  "license": "MIT",
+  "name": "my-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "开发": "vue-cli-service serve",
-    "打包": "vue-cli-service build"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "keywords": [
-    "vue",
-    "admin",
-    "dashboard",
-    "element-ui",
-    "boilerplate",
-    "admin-template",
-    "management-system"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://gitee.com/y_project/RuoYi-Vue.git"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "@antv/g6": "^4.6.18",
-    "@riophae/vue-treeselect": "0.4.0",
-    "animate.css": "^4.1.1",
-    "axios": "0.24.0",
-    "clipboard": "2.0.8",
-    "core-js": "3.19.1",
-    "echarts": "4.9.0",
-    "element-ui": "2.15.8",
-    "file-saver": "2.0.5",
-    "fuse.js": "6.4.3",
-    "highlight.js": "9.18.5",
-    "js-beautify": "1.13.0",
-    "js-cookie": "3.0.1",
-    "jsencrypt": "3.0.0-rc.1",
-    "nprogress": "0.2.0",
-    "quill": "1.3.7",
-    "sass-resources-loader": "^2.2.5",
-    "screenfull": "5.0.2",
-    "sortablejs": "1.10.2",
-    "vue": "2.6.12",
-    "vue-count-to": "1.0.13",
-    "vue-cropper": "0.5.5",
-    "vue-meta": "2.4.0",
-    "vue-router": "3.4.9",
-    "vue-seamless-scroll": "^1.1.23",
-    "vue-text-highlight": "^2.0.10",
-    "vuedraggable": "2.24.3",
-    "vuex": "3.6.0",
-    "wowjs": "^1.1.3"
+    "@strapi/strapi": "*",
+    "@strapi/plugin-users-permissions": "*",
+    "@strapi/plugin-i18n": "*",
+    "pg": "*"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "4.4.6",
-    "@vue/cli-service": "4.4.6",
-    "babel-eslint": "10.1.0",
-    "babel-plugin-dynamic-import-node": "2.3.3",
-    "chalk": "4.1.0",
-    "compression-webpack-plugin": "5.0.2",
-    "connect": "3.6.6",
-    "eslint": "^8.20.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-import-alias": "^1.2.0",
-    "eslint-plugin-vue": "^9.2.0",
-    "lint-staged": "10.5.3",
-    "runjs": "4.4.2",
-    "sass": "1.32.13",
-    "sass-loader": "10.1.1",
-    "script-ext-html-webpack-plugin": "2.1.5",
-    "svg-sprite-loader": "5.1.1",
-    "vue-template-compiler": "2.6.12"
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "93657c15-83cf-4550-9f2b-2595f3b4d048"
   },
   "engines": {
-    "node": ">=8.9",
-    "npm": ">= 3.0.0"
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  "license": "MIT"
 }
